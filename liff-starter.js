@@ -22,7 +22,7 @@ function initializeApp(data) {
 
     // Script call
     document.getElementById('Scriptbutton').addEventListener('click', function () {
-        const UserID = liff.getProfile().userId;
+        const UserID = document.getElementById('useridfield').textContent;
         liff.openWindow({
             url: 'https://script.google.com/macros/s/AKfycbw-Zz9rNyK3TTxOieNmvj1Rt8BRz7h4Op4gkrJo_pXfNYUid8l7/exec?userid='+UserID
         });
