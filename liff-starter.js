@@ -8,7 +8,6 @@ function initializeApp(data) {
     document.getElementById('languagefield').textContent = data.language;
     document.getElementById('viewtypefield').textContent = data.context.viewType;
     document.getElementById('useridfield').textContent = data.context.userId;
-    var UserID = data.context.userId;
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
@@ -20,6 +19,13 @@ function initializeApp(data) {
         });
     });
 
+    // Script call
+    document.getElementById('Scriptbutton').addEventListener('click', function () {
+        liff.openWindow({
+            url: 'https://script.google.com/macros/s/AKfycbw-Zz9rNyK3TTxOieNmvj1Rt8BRz7h4Op4gkrJo_pXfNYUid8l7/exec?userid=111'
+        });
+    });
+
     // closeWindow call
     document.getElementById('closewindowbutton').addEventListener('click', function () {
         liff.closeWindow();
@@ -27,10 +33,9 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-        var UserID = data.context.userId;
         liff.sendMessages([{
             type: 'text',
-            text: "You've successfully sent a message! Hooray!" + UserID
+            text: "You've successfully sent a message! Hooray!"
         }, {
             type: 'sticker',
             packageId: '2',
