@@ -11,6 +11,7 @@ function initializeApp(data) {
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
+    document.getElementById('useridfield99').value = data.context.userId;
     
   
     // openWindow call
