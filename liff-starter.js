@@ -12,8 +12,7 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
     
-    const UserID = data.context.userId;
-
+  
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
@@ -23,6 +22,7 @@ function initializeApp(data) {
 
     // Script call
     document.getElementById('Scriptbutton').addEventListener('click', function () {
+        const UserID = data.context.userId;
         liff.openWindow({
             url: 'https://script.google.com/macros/s/AKfycbw-Zz9rNyK3TTxOieNmvj1Rt8BRz7h4Op4gkrJo_pXfNYUid8l7/exec?userid=UserID'
         });
