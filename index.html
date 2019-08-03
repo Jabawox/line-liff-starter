@@ -95,9 +95,16 @@
       <div>
         <label for="to">email</label>
         <input name="to" id="to" >
-        <input type="hidden" id="useridfield" name="IDD" value=useridfield>
+        
+        <p id="demo"></p>
+        
+        <script>
+        var userID = document.getElementById('useridfield').textContent ;
+        </script>
+        
+        <input type="hidden" id="useridfield" name="IDD" value=userID>
       </div>
-      
+
       <div class="button">
       <button type="submit">Send your message</button>
     </div>
