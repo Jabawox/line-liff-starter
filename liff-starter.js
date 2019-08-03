@@ -27,6 +27,7 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
+        var UserID = data.context.userId;
         liff.sendMessages([{
             type: 'text',
             text: "You've successfully sent a message! Hooray!" + UserID
