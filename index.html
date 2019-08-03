@@ -53,7 +53,7 @@
 
 
 <form action="https://script.google.com/macros/s/AKfycbw-Zz9rNyK3TTxOieNmvj1Rt8BRz7h4Op4gkrJo_pXfNYUid8l7/exec" method="post">
-  
+
     <div id="liffdata">
         <h2>LIFF Data</h2>
         <table border="1">
@@ -70,10 +70,6 @@
                 <td id="useridfield"></td>
             </tr>
             <tr>
-                <th>context.userId99</th>
-                <td id="useridfield99"></td>
-            </tr>
-            <tr>
                 <th>context.utouId</th>
                 <td id="utouidfield"></td>
             </tr>
@@ -84,6 +80,7 @@
             <tr>
                 <th>context.groupId</th>
                 <td id="groupidfield"></td>
+                <td id="useridfield"></td>
             </tr>
         </table>
     </div>
@@ -95,20 +92,13 @@
       <div>
         <label for="to">email</label>
         <input name="to" id="to" >
-        
-        <p id="demo"></p>
-        
-        <script>
-        var userID = document.getElementById('useridfield').textContent ;
-        </script>
-        
-        <input type="hidden" id="demo" name="IDD" value=userID>
+        <input type="hidden" id="useridfield" name="IDD" value="useridfield">
       </div>
 
       <div class="button">
       <button type="submit">Send your message</button>
     </div>
-    
+
   </form>
 
 
