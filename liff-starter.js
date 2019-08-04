@@ -8,14 +8,13 @@ window.onload = function (e) {
     function sendmsg(){
       var FN = document.getElementById("Fname").value;
       var EM = document.getElementById("Uemail").value;
-      var PeaId = document.getElementById("PEAid").value;
+      //var PeaId = document.getElementById("PEAid").value;
       var PhoneNum = document.getElementById("Phone").value;
 
       liff.getProfile().then(function (profile) {
         liff.sendMessages([{
             type: 'text',
             text: FN + "," +
-                  PeaId + "," + 
                   PhoneNum + "," +
                   EM
                   //profile.userId
