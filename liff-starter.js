@@ -98,14 +98,14 @@ function toggleElement(elementId) {
 
     //sendmsg
     function sendmsg(){
-        /*document.getElementById('useridfield99').textContent = data.context.userId;
+        document.getElementById('useridfield99').textContent = data.context.userId;
         const UserX = document.getElementById('useridfield99').textContent;
-        var FN = document.getElementById("Fname").textContent;
-        var EM = document.getElementById("Uemail").textContent;*/
+        //var FN = document.getElementById("Fname").textContent;
+        //var EM = document.getElementById("Uemail").textContent;*/
         
         liff.sendMessages([{
             type: 'text',
-            text: "TEST"
+            text: "TEST : " + UserX
             //text: FN + " , " + EN + " , " + UserX
         }]).then(function () {
             window.alert("Message sent");
