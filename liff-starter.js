@@ -103,7 +103,7 @@ function toggleElement(elementId) {
           liff.getProfile().then(function (profile) {
               document.getElementById('useridprofilefield99').textContent = profile.userId;
               //document.getElementById('displaynamefield').textContent = profile.displayName;            
-          });
+          
 
           var uid = document.getElementById('useridprofilefield99').value
           var FN = document.getElementById("Fname").value;
@@ -118,6 +118,5 @@ function toggleElement(elementId) {
           }).catch(function (error) {
               window.alert("Error sending message: " + error);
           });
-  
-        
+  });      
     };
