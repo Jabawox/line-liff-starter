@@ -99,21 +99,25 @@ function toggleElement(elementId) {
 
     //sendmsg
     function sendmsg(){
-      liff.getProfile()
-          .then(profile => {
-              const name = profile.userId
-            })
+      
+          liff.getProfile().then(function (profile) {
+              document.getElementById('useridprofilefield99').textContent = profile.userId;
+              //document.getElementById('displaynamefield').textContent = profile.displayName;            
+          });
+
+          var uid = document.getElementById('useridprofilefield99').value
+          var FN = document.getElementById("Fname").value;
+          var EM = document.getElementById("Uemail").value;
+
+          liff.sendMessages([{
+              type: 'text',
+              text: "TEST : " + FN + name
+              //text: FN + " , " + EN + " , " + UserX
+          }]).then(function () {
+              window.alert("Message sent");
+          }).catch(function (error) {
+              window.alert("Error sending message: " + error);
+          });
   
-        var FN = document.getElementById("Fname").value;
-        var EM = document.getElementById("Uemail").value;
         
-        liff.sendMessages([{
-            type: 'text',
-            text: "TEST : " + FN + name
-            //text: FN + " , " + EN + " , " + UserX
-        }]).then(function () {
-            window.alert("Message sent");
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
     };
