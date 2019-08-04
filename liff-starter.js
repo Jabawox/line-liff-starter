@@ -105,7 +105,9 @@ function toggleElement(elementId) {
       liff.getProfile().then(function (profile) {
         liff.sendMessages([{
             type: 'text',
-            text: "TEST : " + FN + profile.userId
+            text: "Name : " + FN + '\n' + 
+                  "E-mail : " + EM + '\n' + 
+                  "Uid : " + profile.userId
             //text: FN + " , " + EN + " , " + UserX
         }]).then(function () {
             window.alert("Message sent");
