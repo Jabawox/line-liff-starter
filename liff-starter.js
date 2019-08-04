@@ -11,6 +11,7 @@ function initializeApp(data) {
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
+    document.getElementById('useridfield99').textContent = data.context.userId;
 
 
     // openWindow call
@@ -98,14 +99,17 @@ function toggleElement(elementId) {
 
     //sendmsg
     function sendmsg(){
-        //document.getElementById('useridfield99').textContent = data.context.userId;
-        //const UserX = document.getElementById('useridfield99').textContent;
+      liff.getProfile()
+          .then(profile => {
+              const name = profile.userId
+            })
+  
         var FN = document.getElementById("Fname").value;
         var EM = document.getElementById("Uemail").value;
         
         liff.sendMessages([{
             type: 'text',
-            text: "TEST : " + FN
+            text: "TEST : " + FN + name
             //text: FN + " , " + EN + " , " + UserX
         }]).then(function () {
             window.alert("Message sent");
