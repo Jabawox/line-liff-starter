@@ -14,12 +14,11 @@ window.onload = function (e) {
       liff.getProfile().then(function (profile) {
         liff.sendMessages([{
             type: 'text',
-            text: "Name : " + FN + '\n' +
-                  "PEA ID : " + PeaId + '\n' +
-                  "Phone : " + PhoneNum + '\n' +
-                  "E-mail : " + EM + '\n' +
-                  "Uid : " + profile.userId
-            //text: FN + " , " + EN + " , " + UserX
+            text: FN + "," +
+                  PeaId + "," + 
+                  PhoneNum + "," +
+                  EM
+                  //profile.userId
         }]).then(function () {
             window.alert("Message sent");
         }).catch(function (error) {
