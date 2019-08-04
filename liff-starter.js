@@ -100,8 +100,8 @@ function toggleElement(elementId) {
     function sendmsg(){
         //document.getElementById('useridfield99').textContent = data.context.userId;
         //const UserX = document.getElementById('useridfield99').textContent;
-        const FN = document.getElementById("Fname").textContent;
-        const EM = document.getElementById("Uemail").textContent;
+        var FN = document.getElementById("Fname").value;
+        var EM = document.getElementById("Uemail").value;
         
         liff.sendMessages([{
             type: 'text',
