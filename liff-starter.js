@@ -94,7 +94,7 @@ function toggleElement(elementId) {
 
 
     //sendmsg
-    function sendMsg(){
+    function sendmsg(){
         document.getElementById('useridfield99').textContent = data.context.userId;
         const UserID = document.getElementById('useridfield99').textContent;
         var FN = document.getElementById("Fname").textContent;
