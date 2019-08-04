@@ -11,21 +11,12 @@ function initializeApp(data) {
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
-    document.getElementById('useridfield99').value = data.context.userId;
-    
-  
+
+
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
             url: 'https://line.me'
-        });
-    });
-
-    // Script call
-    document.getElementById('Scriptbutton').addEventListener('click', function () {
-        const UserID = document.getElementById('useridfield').textContent;
-        liff.openWindow({
-            url: 'https://script.google.com/macros/s/AKfycbw-Zz9rNyK3TTxOieNmvj1Rt8BRz7h4Op4gkrJo_pXfNYUid8l7/exec?userid='+UserID
         });
     });
 
