@@ -45,22 +45,6 @@ function initializeApp(data) {
         });
     });
 
-    //sendmsg
-    function sendMsg(){
-        const UserID = document.getElementById('useridfield').textContent;
-        var FN = document.getElementById("Fname").textContent;
-        var EM = document.getElementById("Uemail").textContent;
-        liff.sendMessages([{
-            type: 'text',
-            text: FN + " , " + EN + " , " + UserID
-        }]).then(function () {
-            window.alert("Message sent");
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
-    };
-    
-
     // get access token
     document.getElementById('getaccesstoken').addEventListener('click', function () {
         const accessToken = liff.getAccessToken();
@@ -107,3 +91,20 @@ function toggleElement(elementId) {
         elem.style.display = "block";
     }
 }
+
+
+    //sendmsg
+    function sendMsg(){
+        const UserID = document.getElementById('useridfield').textContent;
+        var FN = document.getElementById("Fname").textContent;
+        var EM = document.getElementById("Uemail").textContent;
+        liff.sendMessages([{
+            type: 'text',
+            text: FN + " , " + EN + " , " + UserID
+        }]).then(function () {
+            window.alert("Message sent");
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    };
+    
