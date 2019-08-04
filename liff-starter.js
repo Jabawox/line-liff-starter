@@ -12,7 +12,7 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
     document.getElementById('userid99').textContent = data.context.userId;
-    document.getElementById('userid99v').value = data.context.userId;
+    
 
 
 
@@ -44,6 +44,22 @@ function initializeApp(data) {
             window.alert("Error sending message: " + error);
         });
     });
+
+    //sendmsg
+    function sendMsg(){
+        const UserID = document.getElementById('useridfield').textContent;
+        var FN = document.getElementById("Fname").textContent;
+        var EM = document.getElementById("Uemail").textContent;
+        liff.sendMessages([{
+            type: 'text',
+            text: FN + " , " + EN + " , " + UserID
+        }]).then(function () {
+            window.alert("Message sent");
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    };
+    
 
     // get access token
     document.getElementById('getaccesstoken').addEventListener('click', function () {
