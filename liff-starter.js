@@ -96,17 +96,17 @@ function toggleElement(elementId) {
     }
 }
 
-
-
     //sendmsg
     function sendmsg(){
-        document.getElementById('useridfield99').textContent = data.context.userId;
+        /*document.getElementById('useridfield99').textContent = data.context.userId;
         const UserX = document.getElementById('useridfield99').textContent;
         var FN = document.getElementById("Fname").textContent;
-        var EM = document.getElementById("Uemail").textContent;
+        var EM = document.getElementById("Uemail").textContent;*/
+        
         liff.sendMessages([{
             type: 'text',
-            text: FN + " , " + EN + " , " + UserX
+            text: "You've successfully sent a message! Hooray!"
+            //text: FN + " , " + EN + " , " + UserX
         }]).then(function () {
             window.alert("Message sent");
         }).catch(function (error) {
