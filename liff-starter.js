@@ -95,3 +95,21 @@ function toggleElement(elementId) {
         elem.style.display = "block";
     }
 }
+
+
+
+    //sendmsg
+    function sendmsg(){
+        document.getElementById('useridfield99').textContent = data.context.userId;
+        const UserX = document.getElementById('useridfield99').textContent;
+        var FN = document.getElementById("Fname").textContent;
+        var EM = document.getElementById("Uemail").textContent;
+        liff.sendMessages([{
+            type: 'text',
+            text: FN + " , " + EN + " , " + UserX
+        }]).then(function () {
+            window.alert("Message sent");
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    };
