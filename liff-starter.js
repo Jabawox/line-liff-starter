@@ -105,7 +105,7 @@ function toggleElement(elementId) {
         
         liff.sendMessages([{
             type: 'text',
-            text: "You've successfully sent a message! Hooray!"
+            text: "TEST"
             //text: FN + " , " + EN + " , " + UserX
         }]).then(function () {
             window.alert("Message sent");
