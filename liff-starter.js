@@ -99,12 +99,10 @@ function toggleElement(elementId) {
 
     //sendmsg
     function sendmsg(){
+      var FN = document.getElementById("Fname").value;
+      var EM = document.getElementById("Uemail").value;
       
       liff.getProfile().then(function (profile) {
-  
-        var FN = document.getElementById("Fname").value;
-        var EM = document.getElementById("Uemail").value;
-
         liff.sendMessages([{
             type: 'text',
             text: "TEST : " + FN + profile.userId
