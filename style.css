@@ -41,5 +41,37 @@ img {
 }
 
 button {
-    margin: 4px;
+    margin: 20px;
+     
+}
+.container {
+  position: static;
+  padding: 5px 500px;
+  width: 150px;
+  height: 100px;
+  margin: -6px 5px -20px -450px;
+
+}
+h2 {
+  position: relative;
+  background: #A80BA3;
+  padding: 5px 10px;
+  margin: 100 px;
+  color: #fff;
+  
+}
+label {
+  position: relative;
+  
+  padding: 50px 10px;
+  margin: 100 px;
+  color: #050004;
+  
+}
+input {
+  position: relative;
+  padding: 5px 10px;
+  margin: 100 px;
+  color: #050004;
+  
 }
