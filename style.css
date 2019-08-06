@@ -18,9 +18,9 @@ table {
     text-align: center;
 }
 
-img { 
-    max-width: 25%; 
-    height: auto; 
+img {
+    max-width: 25%;
+    height: auto;
 }
 
 #profileimagediv {
@@ -42,7 +42,7 @@ img {
 
 button {
     margin: 20px;
-     
+
 }
 .container {
   position: static;
@@ -52,26 +52,34 @@ button {
   margin: -6px 5px -40px -480px;
 
 }
+
 h2 {
   position: relative;
   background: #A80BA3;
   padding: 5px 10px;
   margin: 100 px;
   color: #fff;
-  
+
 }
 label {
   position: relative;
-  
+
   padding: 50px 10px;
   margin: 100 px;
   color: #050004;
-  
+
 }
 input {
   position: relative;
   padding: 5px 10px;
   margin: 100 px;
   color: #050004;
-  
+
+}
+.container-botton {
+  position: static;
+  text-align: center;
+  margin: 5px 100px;
+  color: #000000;
+
 }
