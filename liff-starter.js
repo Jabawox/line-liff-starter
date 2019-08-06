@@ -19,7 +19,7 @@ window.onload = function (e) {
                   EM
                   //profile.userId
         }]).then(function () {
-            window.alert("Message sent");
+            window.alert("ลงทะเบียนเรียบร้อยค่ะ");
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
