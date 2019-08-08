@@ -1,10 +1,6 @@
-html{
-    width:150%;
-    height:150%;
-}
 body {
-  width:150%;
-  height:150%;
+  width:50%;
+  height:50%;
   background-color: #9a79d4;
 }
 body * {
