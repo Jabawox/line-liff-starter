@@ -1,49 +1,45 @@
-body{
+body {
   background-color: #9a79d4;
-  *{
-    font-family: 'Raleway';
-  }
 }
-#register{
+body * {
+  font-family: 'Raleway';
+}
+
+#register {
   width: 100%;
   max-width: 360px;
   border-radius: 25px;
   background-color: #dcd9dc;
   margin: 25px auto;
   padding: 25px;
-  border: 10px solid rgba(0,0,0,0.5);
-  img{
-    width: 600%;
-    max-width: 280px;
-    display: block;
-    margin: 0px auto;
-  }
-  h3{
-    text-align: center;
-  }
-  label{
-    text-transform: uppercase;
-    &[for="submit"]{
-      background-color: #7a3b8b;
-      border-radius: 10px;
-      // display: inline-block;
-      text-align: center;
-      padding: 10px 15px;
-      transition: all 0.2s ease;
-      font-weight: bold;
-      color: #ffffff;
-      
-      &:hover{
-        cursor: pointer;
-        background-color: rgba(0,0,0,0.1);
-        color: #000000;
-      }
-    }
-  }
-  input{
-    &#submit{
-      display: none;
-    }
-    
-  }
+  border: 10px solid rgba(0, 0, 0, 0.5);
+}
+#register img {
+  width: 600%;
+  max-width: 280px;
+  display: block;
+  margin: 0px auto;
+}
+#register h3 {
+  text-align: center;
+}
+#register label {
+  text-transform: uppercase;
+}
+#register label[for="submit"] {
+  background-color: #7a3b8b;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  color: #ffffff;
+}
+#register label[for="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+#register input#submit {
+  display: none;
 }
