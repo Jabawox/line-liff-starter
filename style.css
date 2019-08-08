@@ -10,7 +10,7 @@ body * {
   max-width: 360px;
   border-radius: 25px;
   background-color: #dcd9dc;
-  margin: 25px auto;
+  margin: auto auto;
   padding: 25px;
   border: 10px solid rgba(0, 0, 0, 0.5);
 }
