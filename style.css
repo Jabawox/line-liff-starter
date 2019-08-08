@@ -1,85 +1,49 @@
-
-html {
-    font-size: 11px;
+body{
+  background-color: #9a79d4;
+  *{
+    font-family: 'Raleway';
+  }
 }
-
-table {
-    width: 100%;
-    table-layout:fixed;
-    word-break: break-all;
-}
-
-.div {
-    max-width: 100%;
+#register{
+  width: 100%;
+  max-width: 360px;
+  border-radius: 25px;
+  background-color: #dcd9dc;
+  margin: 25px auto;
+  padding: 25px;
+  border: 10px solid rgba(0,0,0,0.5);
+  img{
+    width: 600%;
+    max-width: 280px;
+    display: block;
+    margin: 0px auto;
+  }
+  h3{
     text-align: center;
-}
-
-#profilepicturediv {
-    text-align: center;
-}
-
-img {
-    max-width: 25%;
-    height: auto;
-}
-
-#profileimagediv {
-    height: 100px;
-    width: 100px;
-}
-
-#contextinfo {
-    display: none;
-}
-
-#accesstokendata, #profileinfo {
-    display: none;
-}
-
-.buttongroup {
-    text-align: center;
-}
-
-button {
-    margin: 20px;
-
-}
-.container {
-  position: static;
-  padding: 5px 500px;
-  width: 280px;
-  height: 100px;
-  margin: -6px 5px -40px -480px;
-
-}
-
-h2 {
-  position: relative;
-  background: #A80BA3;
-  padding: 5px 10px;
-  margin: 100 px;
-  color: #fff;
-
-}
-label {
-  position: relative;
-
-  padding: 50px 10px;
-  margin: 100 px;
-  color: #050004;
-
-}
-input {
-  position: relative;
-  padding: 5px 10px;
-  margin: 100 px;
-  color: #050004;
-
-}
-.container-botton {
-  position: static;
-  text-align: center;
-  margin: 5px 100px;
-  color: #000000;
-
+  }
+  label{
+    text-transform: uppercase;
+    &[for="submit"]{
+      background-color: #7a3b8b;
+      border-radius: 10px;
+      // display: inline-block;
+      text-align: center;
+      padding: 10px 15px;
+      transition: all 0.2s ease;
+      font-weight: bold;
+      color: #ffffff;
+      
+      &:hover{
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.1);
+        color: #000000;
+      }
+    }
+  }
+  input{
+    &#submit{
+      display: none;
+    }
+    
+  }
 }
