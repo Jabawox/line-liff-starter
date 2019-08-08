@@ -1,5 +1,6 @@
 body {
   background-color: #9a79d4;
+  max-width: 600px;
 }
 body * {
   font-family: 'Raleway';
